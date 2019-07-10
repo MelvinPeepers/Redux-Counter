@@ -1,5 +1,6 @@
-export const INCREMENT = 'INCREMENT';
-export const DECREMENT = 'DECREMENT';
+// these are Action Types
+export const INCREMENT = "INCREMENT";
+export const DECREMENT = "DECREMENT";
 
 // Our action creators will return
 // an action packet that our reducer will
@@ -9,10 +10,21 @@ export const DECREMENT = 'DECREMENT';
 // logic of updating the central Redux store. That
 // is left to the reducer(s).
 
+// these are Action Creators
 export const increment = () => {
+  console.log("increase");
   // Fill in this function
+  return {
+    // pass in the Action Type variable
+    type: INCREMENT
+  };
 };
 
 export const decrement = () => {
+  console.log("decrease");
   // Fill in this function
+  return {
+    // pass in the Action Type variable
+    type: DECREMENT
+  };
 };
