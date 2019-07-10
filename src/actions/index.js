@@ -12,6 +12,7 @@ export const DECREMENT = "DECREMENT";
 
 // these are Action Creators
 export const increment = () => {
+  console.log("increase");
   // Fill in this function
   return {
     // pass in the Action Type variable
@@ -20,8 +21,10 @@ export const increment = () => {
 };
 
 export const decrement = () => {
+  console.log("decrease");
   // Fill in this function
   return {
+    // pass in the Action Type variable
     type: DECREMENT
   };
 };
